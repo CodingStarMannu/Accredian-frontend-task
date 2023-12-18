@@ -32,7 +32,7 @@ export default function SignIn() {
 
     try {
       // Make a POST request to your login API using fetch
-      const response = await fetch('http://localhost:3001/user/login', {
+      const response = await fetch('http://localhost:3000/user/login', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -112,11 +112,6 @@ export default function SignIn() {
               Sign In
             </Button>
             <Grid container>
-              <Grid item xs>
-                <Link href="#" variant="body2">
-                  Forgot password?
-                </Link>
-              </Grid>
               <Grid item>
                 <Link href="/" variant="body2">
                   {"Don't have an account? Sign Up"}
